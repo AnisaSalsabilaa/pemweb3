@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Kalkulator </title>
+</head>
+<script language="Javascript">
+		function tambah() {
+		var bil1=parseFloat(document.ffrom.bil1.value); // Deklarasi variabel bil1 dan menampilkan semua nilai yang mengandung desimal
+		var bil2=parseFloat(document.ffrom.bil2.value); // Deklarasi variabel bil1 dan menampilkan semua nilai yang mengandung desimal
+		if (isNaN (bil1) == false && isNaN(bil2) == false){ // Melakukan seleksi if untuk kedua bilangan pada operasi pertambahan
+			var hasil = bil1+bil2;
+			document.ffrom.hasil.value=hasil; // Mencetak hasil seleksi operasi
+		}
+		else {
+			alert("Masukkan Inputan Berupa Angka!")} // Menampilkan jendela pesan "Masukkan Inputan Berupa Angka!"
+		}
+		function kurang() {
+		var bil1=parseFloat(document.ffrom.bil1.value); // Deklarasi variabel bil1 dan menampilkan semua nilai yang mengandung desimal
+		var bil2=parseFloat(document.ffrom.bil2.value); // Deklarasi variabel bil1 dan menampilkan semua nilai yang mengandung desimal
+		if (isNaN (bil1) == false && isNaN(bil2) == false){ // Melakukan seleksi if untuk kedua bilangan pada operasi pengurangan
+			var hasil = bil1-bil2;
+			document.ffrom.hasil.value=hasil; // Mencetak hasil seleksi operasi
+		}
+		else {
+			alert("Masukkan Inputan Berupa Angka!")} // Menampilkan jendela pesan "Masukkan Inputan Berupa Angka!"
+		}
+		function kali() {
+		var bil1=parseFloat(document.ffrom.bil1.value); // Deklarasi variabel bil1 dan menampilkan semua nilai yang mengandung desimal
+		var bil2=parseFloat(document.ffrom.bil2.value); // Deklarasi variabel bil1 dan menampilkan semua nilai yang mengandung desimal
+		if (isNaN (bil1) == false && isNaN(bil2) == false){ // Melakukan seleksi if untuk kedua bilangan pada operasi perkalian
+			var hasil = bil1*bil2;
+			document.ffrom.hasil.value=hasil; // Mencetak hasil seleksi operasi
+		}
+		else {
+			alert("Masukkan Inputan Berupa Angka!")} // Menampilkan jendela pesan "Masukkan Inputan Berupa Angka!"
+		}
+		function bagi() {
+		var bil1=parseFloat(document.ffrom.bil1.value); // Deklarasi variabel bil1 dan menampilkan semua nilai yang mengandung desimal
+		var bil2=parseFloat(document.ffrom.bil2.value); // Deklarasi variabel bil1 dan menampilkan semua nilai yang mengandung desimal
+		if (isNaN (bil1) == false && isNaN(bil2) == false){ // Melakukan seleksi if untuk kedua bilangan pada operasi pembagian
+			var hasil = bil1/bil2;
+			document.ffrom.hasil.value=hasil; // Mencetak hasil seleksi operasi
+		}
+		else {
+			alert ("Masukkan Inputan Berupa Angka!")} // Menampilkan jendela pesan "Masukkan Inputan Berupa Angka!"
+		}
+</script>
+<body>
+	<form name="ffrom">
+		<center>
+			<h1> Kalkulator Sederhana JavaScript </h1>
+			<br>
+			<p> bil 1 : <input type="text" name="bil1" placeholder="Masukkan Bilangan 1"></p>
+			<p> bil 2 : <input type="text" name="bil2" placeholder="Masukkan Bilangan 2"></p>
+			<p> operasi hitung : <input type="button" value="+" onclick="tambah()"> 
+				<input type="button" value="-" onclick="kurang()"> 
+				<input type="button" value="*" onclick="kali()">
+				<input type="button" value="/" onclick="bagi()"></p>
+				<input type="text"  name="hasil" disabled="true" placeholder="Hasil">
+				<input type="reset" value="reset"> 
+		</center>
+	</form>
+</body>
+</html>
