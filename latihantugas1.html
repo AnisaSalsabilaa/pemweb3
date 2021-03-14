@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<title> Latihan 1 </title>
+<script language="Javascript">
+	function test(){
+		var val1=document.kirim.T1.value
+		if (val1>=0&&40) // Melakukan seleksi if untuk (val1>=0&&40)
+			document.kirim.T2.value="E" // Menampilkan data keluaran "E"
+		if (val1>=41&&55) // Melakukan seleksi if untuk (val1>=41&&55)
+			document.kirim.T2.value="D" // Menampilkan data keluaran "D"
+		if (val1>=56&&60) // Melakukan seleksi if untuk (val1>=56&&60)
+			document.kirim.T2.value="C" // Menampilkan data keluaran "C"
+		if (val1>=61&&65) // Melakukan seleksi if untuk (val1>=61&&65)
+			document.kirim.T2.value="BC" // Menampilkan data keluaran "BC"
+		if (val1>=66&&70) // Melakukan seleksi if untuk (val1>=66&&70)
+			document.kirim.T2.value="B" // Menampilkan data keluaran "B"
+		if (val1>=71&&80) // Melakukan seleksi if untuk (val1>=71&&80)
+			document.kirim.T2.value="AB" // Menampilkan data keluaran "AB"
+		if (val1>=81&&100) // Melakukan seleksi if untuk (val1>=81&&100)
+			document.kirim.T2.value="A" // Menampilkan data keluaran "A"
+		if (val1>=101) // Melakukan seleksi if untuk (val1>=101)
+			document.kirim.T2.value="Nilai tidak dapat muncul" // Menampilkan data keluaran "Nilai tidak dapat muncul"
+	}
+</script>
+<body>
+<form method="POST" name="kirim">
+<p> Nilai Angka <input type="text" name="T1" size="30"> Nilai Huruf <input type="text" name="T2" size="30"></p>
+<p><input type="button" value="Lihat Hasil" name="B1" onclick=test()></p>
+</form>
+</body>
+</html>
