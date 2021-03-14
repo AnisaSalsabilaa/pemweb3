@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Latihan 1 </title>
+</head>
+<script language="Javascript">
+	//<!-
+	var nilai = prompt("Nilai (0-100): ",0); //Menampilkan sebuah jendela teks untuk memasukkan angka
+	var hasil = ""; // Menampilkan hasil dari angka yang dimasukkan 
+	if (nilai <=40) // Menampilkan seleksi if jika nilai <=40 akan muncul hasil "E"
+		hasil ="E"
+	else if (nilai <=55) // Menampilkan seleksi else if jika nilai <=55 akan muncul hasil "D"
+		hasil = "D"
+	else if (nilai <=60) // Menampilkan seleksi else if jika nilai <=60 akan muncul hasil "C"
+		hasil = "C"
+	else if (nilai <=65) // Menampilkan seleksi else if jika nilai <=65 akan muncul hasil "BC"
+		hasil = "BC"
+	else if (nilai <=70) // Menampilkan seleksi else if jika nilai <=70 akan muncul hasil "B"
+		hasil = "B"
+	else if (nilai <=80) // Menampilkan seleksi else if jika nilai <=80 akan muncul hasil "AB"
+		hasil = "AB"
+	else if (nilai <=100) // Menampilkan seleksi else if jika nilai <=100 akan muncul hasil "A"
+		hasil = "A";
+	else hasil = "Nilai Tidak Sesuai"; // Jika angka yang dimasukkan lebih dari 100 maka akan memunculkan hasil "Nilai Tidak Sesuai"
+	document. write("Hasil: "+ hasil); // Mencetak hasil seleksi
+
+	//->
+</script>
+<body>
+
+</body>
+</html>
